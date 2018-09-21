@@ -24,6 +24,7 @@
                     <br>
                     Password: {{ Auth::user()->password }}
                 </div>
+                <div class="card-footer"> <a href="{{route('user.index')}}">User registration</a></li> </div>
             </div>
         </div>
     </div>
