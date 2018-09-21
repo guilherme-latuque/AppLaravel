@@ -14,6 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/user/{id}', function (Request $request) {
-    return response()->json(\App\User::find($request->id)); //$request->user();
-    //aaa
+    return response()->json(\App\User::find($request->id));
 });
