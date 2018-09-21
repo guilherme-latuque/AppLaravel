@@ -14,7 +14,15 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h2>Welcome {{ Auth::user()->name }}!</h2>
+                    <br>
+                    You are logged in with the following credentials:
+                    <br><br>
+                    Name: {{ Auth::user()->name }}
+                    <br>
+                    E-mail: {{ Auth::user()->email }}
+                    <br>
+                    Password: {{ Auth::user()->password }}
                 </div>
             </div>
         </div>
